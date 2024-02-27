@@ -1,0 +1,16 @@
+.ui {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    width: 130px;
+    height: 80px;
+    top: 20px;
+    left: 20px;
+    font-size: 20px;
+}
+.uiDiv {
+    width: 60px;
+    height: 60px;
+    cursor: default;
+}

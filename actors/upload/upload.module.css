@@ -1,0 +1,19 @@
+.upload {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 999;
+    box-shadow: inset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.버블{
+    color:#ffffff;
+    width: 100px;
+    height: 100px;
+    display: inline;
+}

@@ -1,0 +1,64 @@
+div {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  cursor: default;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+/*나눔스퀘어*/
+@font-face {
+  /*메이플폰트라이트*/
+  font-family: 'MapleLight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFLight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  /*메이플폰트볼드*/
+  font-family: 'MapleBold';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+.f1 {
+  font-family: 'NanumSquare', sans-serif;
+}
+.f2 {
+  font-family: 'MapleLight';
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+.f3 {
+  font-family: 'MapleBold';
+}
+.c1 { /*수직 수평 정중앙 배치*/
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 36px;
+  overflow: hidden;
+}
+.b1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.b2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  opacity: 0.1;
+}

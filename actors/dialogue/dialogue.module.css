@@ -1,0 +1,70 @@
+.dialogue {
+    position: absolute;
+    border-radius: 20px;
+    padding-left: 70px;
+    padding-right: 60px;
+    padding-top: 40px;
+    font-size: 28px;
+    color: #000000;
+    background-image: url("/assets/대화창.png");
+    background-size: cover; /* 이미지가 박스를 완전히 덮도록 */
+    background-position: center; /* 이미지가 박스 중앙에 위치하도록 */
+    z-index:10;
+}
+.dialogueBtn {
+    position: absolute;
+    top: 136px;
+    right: 30px;
+    height: 32px;
+    color: #000000;
+    background-color: rgb(255, 255, 255,0);
+    border: 0px;
+    border-radius: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 16px;
+}
+.dialogueBtn2 {
+    color: #000000;
+    background-color: rgb(255, 255, 255,0);
+    border: 0px;
+    border-radius: 20px;
+    font-size: 32px;
+    cursor: pointer;
+    line-height: 16px;
+}
+.dialogueSpeaker {
+    position: absolute;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    text-align: center;
+    height: 70px;
+    border-radius: 50px;
+    transform: translate(-10px, -70px);
+    color: #ffffff;
+}
+.Mimi {
+    background-color: #299162;
+}
+
+.Doctor {
+    background-color: #597bd5;
+}
+.Guide{
+    opacity: 0;
+}
+.dialogueWhite{
+    color:#ffffff;
+    text-align: center;
+}
+.dialogueOption {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.dialogueSelect {
+    margin-right: 10px;
+}

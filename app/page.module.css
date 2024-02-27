@@ -1,0 +1,77 @@
+.구름부모{
+    position: relative;
+    width:250px;
+    height: 250px;
+    pointer-events: none;
+}
+.구름자식{ 
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.구름설명{
+    font-size: 24px;
+    margin-top: 100px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    pointer-events: none;
+}
+.구름막대왼쪽{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top:165px;
+    left:120px;
+    transform: rotate(90deg); 
+    pointer-events: none;
+}
+.구름막대오른쪽{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    top:165px;
+    left:-60px;
+    transform: rotate(-30deg); 
+    pointer-events: none;
+}
+.menu1 {
+    height: 500px;
+    width: 900px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.menu2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.menu3 {
+    min-width: 800px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+.menu3Even {
+    transform: translateX(0px)
+}
+
+.menu3Odd {
+    transform: translateX(150px);
+}
+.미미꾸미기{
+    position: absolute;
+    width: auto;
+    height: 200px;
+    bottom: 20px;
+    right:30px;
+}

@@ -1,0 +1,31 @@
+.root {
+  width: 100vw;
+  height: calc(100vh - 60px);
+  background: rgb(0, 0, 0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.root::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/img/하늘배경전체.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}
+.App {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.lan {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+}

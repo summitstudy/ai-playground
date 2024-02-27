@@ -1,0 +1,90 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 5px;
+  height: 60px;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: #e2e2e2 1px solid;
+  z-index: 1000; /* 다른 요소들 위에 표시되도록 z-index 설정 */
+}
+.leftComponent {
+  padding: 10px;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rightDiv{
+  margin:10px;
+  margin-right: 20px;
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 14px;
+  padding: 5px;
+  padding-left: 5px;
+  border-radius: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar option {
+  padding: 10px;
+}
+.navbar button {
+  padding: 8px 20px;
+  height: 32px;
+  background: #ffffff;
+  color:#000000;
+  width: auto;
+  height: 36px;
+  border: 1px solid #e2e2e2;
+  border-radius: 18px;
+  font-size: 14px;
+  cursor: pointer;
+  line-height: 16px;
+}
+.navbar a {
+  display: inline-block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.navbar img {
+  max-width: 100px;
+  height: auto;
+  position: absolute;
+  left: 60px;
+  transform: translate(-50%,-50%);
+  transition: left 0.5s ease, transform 0.5s ease;
+}
+.navbar div:nth-last-child(1) {
+  justify-content: flex-end;
+}
+.다국어메뉴 {
+  width: 120px;
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+}
+/* 
+@media screen and (max-width : 1200px) {
+  .navbar img {
+    left: 20px;
+    transform: translateY(-50%);
+  }
+  .navbar div {
+    justify-content: flex-start;
+  }
+  .navbar div:nth-last-child(1) {
+    justify-content: flex-end;
+  }
+}
+@media screen and (max-width : 768px) {
+  
+} */

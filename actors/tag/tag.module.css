@@ -1,0 +1,28 @@
+.tagGame{
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.tagBox{
+    position: absolute;
+    margin-top: 15px;
+    right:0px;
+    top:0px;
+}
+.tagDiv {
+    width: auto;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 3px;
+    background-color: #2A7FFF;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    display: flex;
+    flex-direction: column; /* flex items를 세로로 배치 */
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 24px;
+    color: white;
+}
