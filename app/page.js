@@ -32,7 +32,7 @@ export default function App() {
         <div style={{ zIndex: "2" }}>
           <div className={style.menu1} ref={boxRef}>
             <motion.div className={style.menu2} drag='y' dragConstraints={boxRef}
-              initial={{ y: -300 }}
+              initial={{ y: 250 }}
               animate={{
                 y: 250,
                 transition: { duration: 1, ease: "easeInOut" }
