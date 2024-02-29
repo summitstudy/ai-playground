@@ -29,7 +29,7 @@ export default function App() {
         {/* <div style={{ zIndex: "1",position:"absolute",top: "-30px" }} className="f3">
         <h2>챕터 선택하기</h2>
       </div> */}
-        <div style={{ zIndex: "2" }}>
+        <div style={{ zIndex: "2" }} className="aniUp">
           <div className={style.menu1} ref={boxRef}>
             <motion.div className={style.menu2} drag='y' dragConstraints={boxRef}
               initial={{ y: 250 }}
