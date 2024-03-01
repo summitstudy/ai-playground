@@ -1,13 +1,28 @@
 "use client"
-import { useState, createContext } from 'react';
+import { useState, createContext, useEffect } from 'react';
 
 const Context = createContext();
 
 export const SetProvider = ({ children }) => {
-  const [language, setLanguage] = useState('ko');
-  const [userName, setuserName] = useState(''); //나중에 유저 닉네임 여기에 담기
+  const [language, setLanguage] = useState(() => {
+    const savedLanguage = localStorage.getItem('language');
+    return savedLanguage || 'ko';
+  });
+  const [userName, setUserName] = useState(() => {
+    const savedUserName = localStorage.getItem('userName');
+    return savedUserName || '';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
+
+  useEffect(() => {
+    localStorage.setItem('userName', userName);
+  }, [userName]);
+
   return (
-    <Context.Provider value={{ language, setLanguage }}>
+    <Context.Provider value={{ language, setLanguage, userName, setUserName }}>
       {children}
     </Context.Provider>
   );
